@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0eeaa2dd08.js" crossorigin="anonymous"></script>
+    <title>Follow Button</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style: none;
+        }
+        .follow {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        .follow-text h2 {
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        .follow-text h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #2e887a;
+            margin: 20px auto;
+        }
+        .follow-text p {
+            color: #282828;
+            font-style: italic;
+            margin-bottom: 80px;
+        }
+        .follow-links ul {
+            display: flex;
+        }
+        .follow-links ul li {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            box-shadow:
+                    inset 0px 11px 8px -10px #CCC,
+                    inset 0px -11px 8px -10px #CCC;
+        }
+        .follow-links ul li i {
+            width: 70px;
+            height: 70px;
+            color: #ffffff;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            transition: 0.3s;
+        }
+        .follow-links ul li:hover i {
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+        }
+        .follow-links ul li.google-plus i {
+            color: #db4a37;
+        }
+        .follow-links ul li.facebook {
+            background-color: #547bbc;
+        }
+        .follow-links ul li.twitter {
+            background-color: #79cbf0;
+        }
+        .follow-links ul li.google-plus {
+            background-color: #ffffff;
+        }
+        .follow-links ul li.instagram {
+            background-color: #f9a32c;
+        }
+        .follow-links ul li.linkedin {
+            background-color: #007bb6;
+        }
+        .follow-links ul li.youtube {
+            background-color: #ee1c1b;
+        }
+    </style>
+</head>
+<body>
+
+<section class="follow">
+    <div class="follow-text">
+        <h2>Hi! I'm Sai Kaung Khant</h2>
+        <p>You can contact me on following links.</p>
+    </div>
+    <div class="follow-links">
+        <ul>
+            <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100010979624808" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/zaawphyoo"><i class="fab fa-instagram"></i></a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/saikhant/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
